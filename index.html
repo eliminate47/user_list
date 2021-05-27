@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>User list</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.0/chart.min.js"
+		integrity="sha512-yadYcDSJyQExcKhjKSQOkBKy2BLDoW6WnnGXCAkCoRlpHGpYuVuBqGObf3g/TdB86sSbss1AOP4YlGSb6EKQPg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="srch-box">
+			<input type="text" id="search" class="srch_text" placeholder="Search user...">
+			<div id="btn-modal" class="btn-chart">Show chart</div>
+		</div>
+		<table id="user-table">
+			<thead>
+				<tr class="title">
+					<th></th>
+					<th>Last</th>
+					<th>First</th>
+					<th>Username</th>
+					<th>Phone</th>
+					<th>Location</th>
+				</tr>
+			</thead>
+			<tbody id="users"></tbody>
+
+		</table>
+	</div>
+	<div id="modal" class="modal-window">
+		<div class="modal-content">
+			Gender users
+			<canvas id="gen-chart" class="chart"></canvas>
+			<div id="close-m" class="btn-close">×</div>
+		</div>
+	</div>
+
+	<script src="main.js"></script>
+
+</body>
+
+</html>
