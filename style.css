@@ -24,7 +24,7 @@ body,th,#users > tr {
 }
 
 td {
-	width: 250px;
+	width: 18%;
 }
 
 #users > tr:nth-child(4n+1),
@@ -83,7 +83,6 @@ td {
 .add-info {
 	height: 215px;
 	display: none;
-	transition: display .5 ease-out;
 }
 
 .click {
@@ -99,7 +98,7 @@ td {
 
 ul {
 	display: block;
-	width: 1050px;
+	width: 85%;
 	list-style-type: none;
 	float: left;
 	column-count: 3;
